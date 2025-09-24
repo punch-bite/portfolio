@@ -1,0 +1,61 @@
+.about .hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .hero .profilPresentation {
+  padding: 15px;
+}
+
+.about .hero .profilPresentation h1 {
+
+  font-size: 56px;
+  font-weight: var(--text-title-weigth);
+  color: var(--bg-color-primary);
+  margin-bottom: 25px;
+
+}
+
+.about .hero .profilPresentation h4 {
+  color: var(--btn-color-secondary);
+}
+
+.about .hero .profilPresentation p {
+  color: var(--text-color-primary);
+  font-size: var(--text-size);
+}
+.about .hero .profilPresentation .bi{
+    color: white;
+}
+.about .hero .profilPhoto {
+  padding: 10px 50px;
+}
+
+.about .hero .profilPhoto .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  border-bottom-left-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 0%;
+  box-shadow: 0 0 25px 25px rgba(255, 120, 255, 0.1);
+  border: 1px solid var(--btn-color-secondary);
+  background: var(--mirror-effet-radial);
+  transform: scaleY(1);
+  opacity: 0.7;
+  backdrop-filter: blur(10px);
+}
+.about .hero .profilPhoto .card img{
+  transform: scaleY(1);
+  position:  absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-top: -25px;
+  overflow-y: inherit;
+  filter: grayscale(100%) contrast(150%) brightness(110%);
+}

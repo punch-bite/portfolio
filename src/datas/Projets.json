@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Application E-commerce React",
+      "description": "Plateforme e-commerce complète avec panier, authentification et paiement",
+      "detailedDescription": "Développement d'une application e-commerce moderne avec gestion d'état avancée, système de panier persistant et interface utilisateur responsive.",
+      "image": "/images/ecommerce-project.jpg",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
+      "githubLink": "https://github.com/votre-compte/ecommerce-app",
+      "liveLink": "https://votre-app.vercel.app",
+      "features": [
+        "Panier d'achat persistant",
+        "Authentification utilisateur",
+        "Paiement sécurisé Stripe",
+        "Interface administrateur",
+        "Recherche et filtres"
+      ],
+      "category": "Fullstack",
+      "status": "Terminé",
+      "year": 2024
+    },
+    {
+      "id": 2,
+      "title": "Plateforme de Blog Communautaire",
+      "description": "Système de blog avec authentification et commentaires",
+      "detailedDescription": "Création d'une plateforme de blogging permettant aux utilisateurs de publier des articles, commenter et interagir.",
+      "image": "/images/blog-platform.jpg",
+      "technologies": ["React", "Firebase", "CSS3", "Cloud Functions"],
+      "githubLink": "https://github.com/votre-compte/blog-platform",
+      "liveLink": "https://votre-blog.firebaseapp.com",
+      "features": [
+        "Éditeur de texte riche",
+        "Système de commentaires",
+        "Recherche full-text",
+        "Upload d'images",
+        "Notifications en temps réel"
+      ],
+      "category": "Frontend",
+      "status": "En développement",
+      "year": 2024
+    },
+    {
+      "id": 3,
+      "title": "Application Météo",
+      "description": "Application météo avec prévisions et géolocalisation",
+      "detailedDescription": "Application mobile-first affichant les prévisions météo basées sur la géolocalisation ou la recherche manuelle.",
+      "image": "/images/weather-app.jpg",
+      "technologies": ["React", "API REST", "CSS Grid", "Local Storage"],
+      "githubLink": "https://github.com/votre-compte/weather-app",
+      "liveLink": "https://meteo-app.netlify.app",
+      "features": [
+        "Géolocalisation automatique",
+        "Prévisions 7 jours",
+        "Interface responsive",
+        "Thème sombre/clair",
+        "Historique des recherches"
+      ],
+      "category": "Frontend",
+      "status": "Terminé",
+      "year": 2023
+    }
+  ]
+}

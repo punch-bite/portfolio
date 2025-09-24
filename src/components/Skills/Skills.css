@@ -1,0 +1,35 @@
+.skills {
+    padding: 20px;
+}
+
+.skills .innerCompetences {
+    padding: 50px 0;
+}
+.skills .innerCompetences h3{
+    color: var(--text-color-primary);
+}
+.skills .innerCompetences .row {
+    margin-bottom: 50px;
+}
+
+.skills .innerCompetences .row .card {
+    background: var(--mirror-effet);
+    border: .25px solid var(--bg-color-secondary);
+    border-radius: 2%;
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 15px 3px var(--box); */
+}
+
+.skills .innerCompetences .row .card h5 {
+    color: var(--text-color-primary);
+}
+
+.skills .innerCompetences .row .card .progress {
+    border-radius: 0;
+}
+
+.skills .innerCompetences .row .card .progress-bar {
+    background-color: var(--btn-color-primary);
+    font-size: 9px;
+    font-weight: 600;
+}

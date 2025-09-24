@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Projet Portfolio",
+    "description": "Site vitrine réalisé avec React"
+  },
+  {
+    "id": 2,
+    "title": "Application météo",
+    "description": "Application utilisant une API météo"
+  }
+]

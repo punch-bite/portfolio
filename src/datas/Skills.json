@@ -1,0 +1,188 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Graphic Design",
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Adobe ilustrator",
+                    "level": 95,
+                    "icon": "oajcrtsi",
+                    "color": "",
+                    "description": "Application de dessins professionnels"
+                },
+                {
+                    "id": 2,
+                    "name": "Adobe Photoshop",
+                    "level": 90,
+                    "icon": "",
+                    "color": "#61DAFB",
+                    "description": "Manipulation des photos"
+                },
+                {
+                    "id": 3,
+                    "name": "Adobe Indesign",
+                    "level": 95,
+                    "icon": "",
+                    "color": "#61DAFB",
+                    "description": "Adition des journaux et des livres"
+                },
+                {
+                    "id": 4,
+                    "name": "Adobe After Effect",
+                    "level": 45,
+                    "icon": "aqrjvdwr",
+                    "color": "#F7DF1E",
+                    "description": "Motion design / Animation"
+                },
+                {
+                    "id": 5,
+                    "name": "Adobe première pro",
+                    "level": 60,
+                    "icon": "",
+                    "color": "#1572B6",
+                    "description": "Montage de vidéos professionnelles"
+                },
+                {
+                    "id": 6,
+                    "name": "Adobe XD",
+                    "level": 95,
+                    "icon": "yvaxaowk",
+                    "color": "#E34F26",
+                    "description": "Montage de maquettes Design UI/UX"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Frontend",
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Thymeleaf",
+                    "level": 90,
+                    "icon": "oajcrtsi",
+                    "color": "",
+                    "description": "Développement d'interfaces utilisateur modernes"
+                },
+                {
+                    "id": 2,
+                    "name": "React",
+                    "level": 60,
+                    "icon": "",
+                    "color": "#61DAFB",
+                    "description": "Développement d'interfaces utilisateur modernes"
+                },
+                {
+                    "id": 3,
+                    "name": "Flutter",
+                    "level": 60,
+                    "icon": "",
+                    "color": "#61DAFB",
+                    "description": "Développement d'interfaces utilisateur modernes"
+                },
+                {
+                    "id": 4,
+                    "name": "JavaScript",
+                    "level": 95,
+                    "icon": "aqrjvdwr",
+                    "color": "#F7DF1E",
+                    "description": "Langage de programmation pour le web"
+                },
+                {
+                    "id": 5,
+                    "name": "CSS3 / Bootstrap",
+                    "level": 98,
+                    "icon": "",
+                    "color": "#1572B6",
+                    "description": "Stylisation et mise en page"
+                },
+                {
+                    "id": 6,
+                    "name": "HTML5",
+                    "level": 99,
+                    "icon": "yvaxaowk",
+                    "color": "#E34F26",
+                    "description": "Structure sémantique des pages web"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Backend",
+            "skills": [
+                {
+                    "id": 7,
+                    "name": "JAVA/Spring Boot",
+                    "level": 75,
+                    "icon": "uonachts",
+                    "color": "#339933",
+                    "description": "Environnement d'exécution JavaScript côté serveur"
+                },
+                {
+                    "id": 8,
+                    "name": "PHP/Laravel",
+                    "level": 70,
+                    "icon": "keldjfda",
+                    "color": "#3776AB",
+                    "description": "Développement d'applications backend"
+                },
+                {
+                    "id": 9,
+                    "name": "Dart",
+                    "level": 70,
+                    "icon": "keldjfda",
+                    "color": "#3776AB",
+                    "description": "Développement d'applications backend"
+                },
+                {
+                    "id": 10,
+                    "name": "Node.js",
+                    "level": 70,
+                    "icon": "keldjfda",
+                    "color": "#3776AB",
+                    "description": "Développement d'applications backend"
+                },
+                {
+                    "id": 11,
+                    "name": "MySql",
+                    "level": 70,
+                    "icon": "keldjfda",
+                    "color": "#3776AB",
+                    "description": "Gestion de base de données"
+                },
+                {
+                    "id": 12,
+                    "name": "MongoDB",
+                    "level": 70,
+                    "icon": "keldjfda",
+                    "color": "#3776AB",
+                    "description": "Développement d'applications backend"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Outils & Méthodologies",
+            "skills": [
+                {
+                    "id": 13,
+                    "name": "Git",
+                    "level": 85,
+                    "icon": "jjxzcivr",
+                    "color": "#F05032",
+                    "description": "Gestion de versions"
+                },
+                {
+                    "id": 14,
+                    "name": "Figma",
+                    "level": 60,
+                    "icon": "",
+                    "color": "#F24E1E",
+                    "description": "Design d'interfaces"
+                }
+            ]
+        }
+    ]
+}
