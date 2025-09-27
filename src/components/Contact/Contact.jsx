@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { useState, useEffect } from "react";
 import './Contact.css';
 
@@ -6,6 +7,7 @@ export const Contact = () => {
     const [formData, setFormData] = useState({
         username: '',
         email: '',
+        subject: '',
         message: ''
     });
     const [errors, setErrors] = useState({});
@@ -49,37 +51,29 @@ export const Contact = () => {
     }, [formData]);
 
 
-
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Remplacez par vos identifiants EmailJS
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-            .then((result) => {
-                console.log('SUCCESS!', result.text);
-                setMessage('✅ Message envoyé avec succès !');
-                form.current.reset(); // Réinitialise le formulaire
-            }, (error) => {
-                console.log('FAILED...', error.text);
-                setMessage("❌ Une erreur s'est produite. Veuillez réessayer.");
-            })
-            .finally(() => {
-                setIsSubmitting(false);
-            });
+        // Récupérez ces valeurs depuis votre tableau de bord EmailJS
+        const serviceID = import.meta.env.VITE_SERVICE_EMAIL_ID;
+        const templateID = import.meta.env.VITE_TEMPLATE_EMAIL_ID;
+        const publicKey = import.meta.env.VITE_CLE_EMAIL_PUBLIC;
+
         // Validation finale avant soumission
         if (Object.keys(errors).length === 0) {
             try {
-                console.log('Données du formulaire:', formData);
+                // console.log('Données du formulaire:', formData);
+                const result = await emailjs.send(serviceID, templateID, formData, publicKey);
+                console.log('Email envoyé !');
 
                 // Simulation d'envoi
                 await new Promise(resolve => setTimeout(resolve, 2000));
 
-                alert('Message envoyé avec succès!');
                 setFormData({
                     username: '',
                     email: '',
+                    subject: '',
                     message: ''
                 });
             } catch (error) {
@@ -98,7 +92,7 @@ export const Contact = () => {
                 <div className="row justify-content-center mt-5 py-5">
                     <div className="col-md-6 col-12">
                         <h1 className='text-white text-uppercase fw-bolder fade-in-up'>Contactez-Moi</h1>
-                        <form onSubmit={handleSubmit} action="" method="post" className="fade-in-up">
+                        <form onSubmit={handleSubmit} method="post" className="fade-in-up">
                             <div className="form-group mb-3">
                                 <label htmlFor="username">Name</label>
                                 <input type="text" name="username" id="username"
@@ -118,6 +112,16 @@ export const Contact = () => {
                                     onChange={handleChange}
                                     required aria-required="true" />
                                 {errors.email && <span className="error-message">{errors.email}</span>}
+                            </div>
+                            <div className="form-group mb-3">
+                                <label htmlFor="subject">Sujet</label>
+                                <input type="subject" name="subject" id="subject"
+                                    className={`form-control py-3 bg-black text-white-50 ${errors.subject ? 'error' : ''}`}
+                                    placeholder='Quel-est le sujet?' aria-placeholder='your subject'
+                                    value={formData.subject}
+                                    onChange={handleChange}
+                                    required aria-required="true" />
+                                {errors.subject && <span className="error-message">{errors.subject}</span>}
                             </div>
                             <div className="from-group">
                                 <label htmlFor="message">Message</label>
