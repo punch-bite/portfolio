@@ -17,16 +17,16 @@ export const Header = () => {
 
           <div className="collapse navbar-collapse " id="navbarSupportedContent">
             <ul className="navbar-nav justify-content-end text-center ms-auto">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">A Propos</a>
+              <li className="nav-item me-3 px-2 active">
+                <a className="nav-link" aria-current="page" href="/">A Propos</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item me-3 px-2">
                 <a className="nav-link" href="skills">Compétences</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item me-3 px-2">
                 <a className="nav-link" href="projets">Projets</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item me-3 px-2">
                 <a className="nav-link" href="contact">Contact</a>
               </li>
             </ul>

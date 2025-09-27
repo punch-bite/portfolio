@@ -15,7 +15,7 @@ export const About = () => {
                             </div>
                         </div>
                         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 p-5 profilPresentation">
-                            <h1 className='page-title'>Qui suis-je ?</h1>
+                            <h3 className='page-title'>Qui suis-je ?</h3>
                             <h1 className='fade-in-up'>{profile.name}</h1>
                             <h4 className='fade-in-up'>{profile.skill}</h4>
                             <p className='fade-in-up'>
