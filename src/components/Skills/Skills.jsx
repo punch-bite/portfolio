@@ -12,7 +12,6 @@ export const Skills = () => {
             category.skills.forEach(skill => {
                 if (skill.icon) {
                     const testUrl = `/assets/icons/${skill.icon}`;
-                    console.log(`Test URL: ${testUrl}`);
 
                     // Test de chargement
                     const img = new Image();
@@ -33,27 +32,6 @@ export const Skills = () => {
         return `/assets/icons/${iconName}`;
     };
 
-    // Gestion des états de chargement
-    // if (loadingError) {
-    //     return (
-    //         <div className="alert alert-warning mt-5">
-    //             <h4>Chargement des données par défaut</h4>
-    //             <p>Erreur: {loadingError}</p>
-    //         </div>
-    //     );
-    // }
-
-    // if (!skillDatas || !iconsLoaded) {
-    //     return (
-    //         <div className="d-flex justify-content-center align-items-center" style={{ height: '20px' }}>
-    //             <div className="spinner-grow text-primary" role="status">
-    //                 <span className="visually-hidden">Chargement des compétences...</span>
-    //             </div>
-    //         </div>
-    //     );
-    // }
-
-
     return (
         <section id='skills' className='skills'>
             <div className="container">
@@ -63,7 +41,7 @@ export const Skills = () => {
                         <div key={category.id} className="row">
                             <h3 className='col-12 mb-3' >{category.name}</h3>
                             {category.skills.map(skill => (
-                                <div key={skill.id} className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-xs-12 p-md-2 p-1">
+                                <div key={skill.id} className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-xs-12 p-md-2 p-0 py-1">
                                     <div className="card fade-in-up bounce-animation">
                                         <div className="card-header d-flex justify-content-between align-items-center pb-0">
                                             <div className="title text-nowrap d-flex align-items-center">
