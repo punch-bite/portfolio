@@ -48,3 +48,6 @@
   border-radius: 1px;
   border-bottom: 2px solid var(--btn-color-primary);
 }
+.header nav li.active a{
+  color: white;
+}

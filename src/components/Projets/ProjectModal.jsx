@@ -53,7 +53,7 @@ export const ProjectModal = () => {
                                     <h6 className="text-white my-1 text-end">{project.year}</h6>
                                 </div>
                             </div>
-                            <div className="card-body position-relative p-0" style={{ height: '500px' }}>
+                            <div className="card-body position-relative p-0" style={{ height: '500px'}}>
                                 <img className="position-absolute"
                                     src={!project.image}
                                     alt={project.title} loading="lazy"
@@ -69,7 +69,7 @@ export const ProjectModal = () => {
                                 <h3>Technologies</h3>
                                 <p className="mb-5">
                                     {project.technologies.map((tech, index) => (
-                                        <span key={index} className="badge bg-warning-subtle text-warning-emphasis me-3 p-2">{tech}</span>
+                                        <span key={index} className="badge bg-warning-subtle text-warning-emphasis me-3 p-2 my-1">{tech}</span>
                                     ))}
                                 </p>
 
@@ -79,7 +79,7 @@ export const ProjectModal = () => {
                                 <h3>Options</h3>
                                 <p className="mb-5">
                                     {project.features.map((tech, index) => (
-                                        <li key={index} className="badge bg-primary-subtle text-primary-emphasis me-3 p-2">{tech}</li>
+                                        <li key={index} className="badge bg-primary-subtle text-primary-emphasis me-3 p-2 my-1">{tech}</li>
                                     ))}
                                 </p>
                             </div>
