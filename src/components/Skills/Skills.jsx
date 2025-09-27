@@ -35,7 +35,7 @@ export const Skills = () => {
     return (
         <section id='skills' className='skills'>
             <div className="container">
-                <h1 className='my-5 text-uppercase fw-bolder text-white'>Compétences</h1>
+                <h1 className='my-5 text-uppercase fw-bolder text-white page-title'>Compétences</h1>
                 <div className="innerCompetences">
                     {skillDatas.categories.map(category => (
                         <div key={category.id} className="row">

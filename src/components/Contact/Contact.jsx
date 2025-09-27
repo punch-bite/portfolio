@@ -91,7 +91,7 @@ export const Contact = () => {
             <div className="container">
                 <div className="row justify-content-center mt-5 py-5">
                     <div className="col-md-6 col-12">
-                        <h1 className='text-white text-uppercase fw-bolder fade-in-up'>Contactez-Moi</h1>
+                        <h1 className='text-white text-uppercase fw-bolder fade-in-up page-title'>Contactez-Moi</h1>
                         <form onSubmit={handleSubmit} method="post" className="fade-in-up">
                             <div className="form-group mb-3">
                                 <label htmlFor="username">Name</label>
