@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projets.css';
 import { ProjectCard } from './ProjetCard';
 import projects from '../../datas/Projets.json';
 
 export const Projects = () => {
-
   return (
     <section id="projets" className="projects">
-      <div className="container">
-        <h2>Mes Projets</h2>
-        <div className="projects-grid">
+      <div className="container p-3">
+        <h1 className='mb-5 text-uppercase text-white'>Mes Projets</h1>
+        <div className="row">
           {projects.projects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}

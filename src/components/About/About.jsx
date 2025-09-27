@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import profileImage from '../../assets/images/h.png';
+import profile from '../../datas/profile.json';
 
 export const About = () => {
     return (
@@ -9,32 +10,27 @@ export const About = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 profilPhoto">
-                            <div className="card position-relative fade-out" >
+                            <div className="card position-relative fade-in-up" >
                                 <img src={profileImage} alt="profile.png" className='img-fluid' />
                             </div>
                         </div>
                         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 p-5 profilPresentation">
-                            <h1>My Name</h1>
-                            <h4>Graphiste & Développeur Full-Stack </h4>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Voluptatum nam tempora aliquam beatae tempore iste, saepe,
-                                cumque sequi perspiciatis tenetur rerum necessitatibus earum,
-                                nostrum id nisi itaque molestiae rem similique.
+                            <h1 className='fade-in-up'>{profile.name}</h1>
+                            <h4 className='fade-in-up'>{profile.skill}</h4>
+                            <p className='fade-in-up'>
+                                {profile.description}
                             </p>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Voluptatum nam tempora aliquam beatae tempore iste, saepe,
-                                cumque sequi perspiciatis tenetur rerum necessitatibus earum,
-                                nostrum id nisi itaque molestiae rem similique.
+                            <p className='fade-in-up'>
+                                À mi-chemin entre l'art et la technique, je maîtrise l'ensemble de la chaîne de création digitale.
+                                De la conception visuelle avec les outils Adobe au développement d'applications web complètes (frontend et backend),
+                                je donne vie à vos projets avec précision et créativité.
                             </p>
-                            <div className="py-3 my-3 d-flex justify-content-between">
-                                    <a href="https://www.facebook.com" className="nav-link px-3 py-2 rounded-2 bg-dark bi bi-facebook text-white"></a>
-                                    <a href="#" className="nav-link px-3 py-2 rounded-2 bg-dark bi bi-instagram"></a>
-                                    <a href="#" className="nav-link px-3 py-2 rounded-2 bg-dark bi bi-twitter"></a>
-                                    <a href="#" className="nav-link px-3 py-2 rounded-2 bg-dark bi bi-linkedin"></a>
-                                    <a href="#" className="nav-link px-3 py-2 rounded-2 bg-dark bi bi-whatsapp"></a>
+                            <div className="py-3 my-3 d-flex justify-content-between fade-in-up">
+                                {profile.reseaux.map((link, index) => (
+                                    <a title={link.name} key={index} href={link.link} className={`nav-link px-3 py-2 rounded-2 bg-dark bi bi-${link.icon} bounce-animation`}></a>
+                                ))}
                             </div>
+                            <a href="/contact" className='btn btn-light btn-contact py-2 px-5 me-auto mt-4'>Contactez-Moi</a>
                         </div>
                     </div>
                 </div>

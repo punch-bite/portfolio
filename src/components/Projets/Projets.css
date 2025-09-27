@@ -1,0 +1,70 @@
+.projects,.ProjectDetail{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.projects .card{
+    background: var(--mirror-effet-radial);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--bg-color-secondary);
+}
+.projects .card .card-body{
+    padding: 0;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .card .card-body img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 3s infinite;
+}
+.projects .card .card-body img:hover{
+    transform: scale(1.5);
+}
+.projects .card h5, .projects .card p{
+    color: var(--text-color-primary);
+}
+
+/* Projets.css - Ajoutez ces styles */
+.project-detail-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 2rem 0;
+}
+
+.project-hero {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.project-content section {
+    margin-bottom: 3rem;
+}
+
+.tech-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        align-items: center;
+    }
+}

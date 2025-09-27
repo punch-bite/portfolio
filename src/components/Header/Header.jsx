@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logo from '../../assets/images/noi300.png';
+import logo from '/assets/images/noi500x500.png';
 
 export const Header = () => {
   return (
@@ -8,7 +8,7 @@ export const Header = () => {
       <nav className="navbar navbar-expand-lg d-flex justify-content-between">
         <div className="container-md container-fluid px-md-0 px-2">
           <a className="navbar-brand col-md-4 col-6" href="#">
-            <img src={logo} alt="logo" width={150} />
+            <img src={logo} alt="logo" width={50} />
           </a>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

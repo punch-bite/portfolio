@@ -1,0 +1,30 @@
+.contact{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.contact h1{
+    margin-bottom: 50px;
+}
+.contact form label{
+    color: var(--bg-color-secondary);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact form input,
+.contact form textarea{
+    color: var(--bg-color-secondary);
+    border: 1px solid var(--bg-color-secondary);
+}
+.contact form input:focus,
+.contact form textarea:focus{
+    border: 1px solid var(--btn-color-primary);
+    box-shadow: 0 0 3px 5px var(--box);
+}
+.contact form input::-webkit-input-placeholder,
+.contact form textarea::-webkit-input-placeholder{
+    color: var(--bg-color-secondary);
+    font-size: 14px;
+    font-weight: var(--link-weigth);
+}

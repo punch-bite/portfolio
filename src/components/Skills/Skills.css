@@ -5,9 +5,11 @@
 .skills .innerCompetences {
     padding: 50px 0;
 }
-.skills .innerCompetences h3{
+
+.skills .innerCompetences h3 {
     color: var(--text-color-primary);
 }
+
 .skills .innerCompetences .row {
     margin-bottom: 50px;
 }
@@ -32,4 +34,11 @@
     background-color: var(--btn-color-primary);
     font-size: 9px;
     font-weight: 600;
+}
+
+.skill-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 8px;
 }

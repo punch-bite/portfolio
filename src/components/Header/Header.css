@@ -25,6 +25,7 @@
   color: var(--text-color-primary);
   font-size: var(--text-size);
   font-weight: var(--link-weigth);
+  font-style: uppercase;
 }
 
 .header nav li a.nav-link:hover,

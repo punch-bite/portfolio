@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import { MainLayout } from "./components/Layouts/MainLayout";
+import { ProjectModal } from './components/Projets/ProjectModal';
 
 // Lazy loading avec gestion d'erreur
 // const lazyLoad = (componentName, path) => lazy(() => 
@@ -56,7 +57,7 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<About />} />
           <Route path="/projets" element={<Projects />} />
-          {/* <Route path="/projets/:id" element={<ProjectCard />} /> */}
+          <Route path="/projets/:projetid" element={<ProjectModal />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
