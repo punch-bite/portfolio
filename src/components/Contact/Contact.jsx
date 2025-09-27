@@ -12,7 +12,8 @@ export const Contact = () => {
     });
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
-
+    const [isSuccess, setIsSuccess] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
     // Gestionnaire de changement pour tous les champs
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -65,7 +66,10 @@ export const Contact = () => {
             try {
                 // console.log('Données du formulaire:', formData);
                 const result = await emailjs.send(serviceID, templateID, formData, publicKey);
-                console.log('Email envoyé !');
+
+                if (result.status === 200) {
+                    setIsSuccess(true);
+                }
 
                 // Simulation d'envoi
                 await new Promise(resolve => setTimeout(resolve, 2000));
@@ -85,6 +89,13 @@ export const Contact = () => {
         setIsSubmitting(false);
     };
 
+    useEffect(() => {
+        if (isSuccess) {
+            setShowSuccess(true);
+            const timer = setTimeout(() => setShowSuccess(false), 2000);
+            return () => clearTimeout(timer); // Nettoyage
+        }
+    }, [isSuccess]);
 
     return (
         <section id='contact' className="contact pb-5">
@@ -136,7 +147,7 @@ export const Contact = () => {
                             </div>
                             <button disabled={isSubmitting || Object.keys(errors).length > 0}
                                 onClick={handleChange} type="submit"
-                                className='btn bg-warning-subtle bg-gradient col-12 py-2 text-warning-emphasis mt-5 fw-bold submit-btn'
+                                className='btn bg-warning-subtle bg-gradient col-12 py-3 text-warning-emphasis mt-5 fw-bold submit-btn'
                             >
                                 {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
                             </button>
@@ -144,6 +155,15 @@ export const Contact = () => {
                     </div>
                 </div>
             </div>
+
+            {showSuccess && (
+                <div className="container d-flex justify-content-center align-items-center position-fixed bottom-0 start-0 end-0 fade-in-up bg-transparent" style={{ width: '100%' }}>
+                    <div className='rounded alert alert-success border-success  text-success-emphasis shadow col-md-4 col-11 mb-5 text-center fw-bolder animate__animated animate__fadeInUp'>
+                        Message envoyé avec succès!
+                    </div>
+                </div> )
+            }
+
         </section>
     )
 }
