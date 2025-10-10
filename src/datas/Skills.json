@@ -233,7 +233,7 @@
                 {
                     "id": 27,
                     "name": "Joomla",
-                    "level": 95,
+                    "level": 55,
                     "icon": "Joomla.png",
                     "color": "#F24E1E",
                     "description": "Développement de sites web complexes avec CMS professionnel"
@@ -241,7 +241,7 @@
                 {
                     "id": 28,
                     "name": "Wix",
-                    "level": 95,
+                    "level": 65,
                     "icon": "Wix.png",
                     "color": "#F24E1E",
                     "description": "Création rapide de sites web avec constructeur visuel"
@@ -249,8 +249,8 @@
                 {
                     "id": 29,
                     "name": "FlutterFlow",
-                    "level": 95,
-                    "icon": "",
+                    "level": 65,
+                    "icon": "FlutterFlow.svg",
                     "color": "#F24E1E",
                     "description": "Développement visuel d'applications Flutter sans code"
                 },

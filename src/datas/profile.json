@@ -2,6 +2,7 @@
     "name": "Ndongo Ondoa Idriss",
     "skill": "Designer graphique & Développeur full-stack",
     "description": "Un passionné de création numérique. Mon expertise couvre à la fois le design graphique (Adobe Illustrator, Photoshop, XD) et le développement web full-stack (HTML/CSS, JavaScript, Spring Boot, Laravel). Je conçois et réalise des interfaces modernes et fonctionnelles, en accordant une importance égale à l'esthétique et à la performance technique.",
+    "ImageProfile": "/assets/images/profile/imageProfiles.png",
     "reseaux": [
         {
             "name": "Facebook",

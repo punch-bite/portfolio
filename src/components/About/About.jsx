@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import profileImage from '../../assets/images/h.png';
+// import profileImage from '../../assets/images/h.png';
 import profile from '../../datas/profile.json';
 
 export const About = () => {
@@ -9,9 +9,9 @@ export const About = () => {
             <div className="hero">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 profilPhoto">
+                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 profilPhoto px-md-5">
                             <div className="card position-relative fade-in-up" >
-                                <img src={profileImage} alt="profile.png" className='img-fluid' />
+                                <img src={profile.ImageProfile} alt="profile.png" className='img-fluid' loading='lazy' />
                             </div>
                         </div>
                         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 p-5 profilPresentation">
