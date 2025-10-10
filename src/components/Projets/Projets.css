@@ -1,15 +1,18 @@
-.projects,.ProjectDetail{
+.projects,
+.ProjectDetail {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
-.projects .card{
+
+.projects .card {
     background: var(--mirror-effet-radial);
     backdrop-filter: blur(10px);
     border: 1px solid var(--bg-color-secondary);
 }
-.projects .card .card-body{
+
+.projects .card .card-body {
     padding: 0;
     min-height: 300px;
     overflow: hidden;
@@ -18,7 +21,8 @@
     justify-content: center;
     align-items: center;
 }
-.projects .card .card-body img{
+
+.projects .card .card-body img {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,21 +30,38 @@
     height: 100%;
     transition: all 3s infinite;
 }
-.projects .card .card-body img:hover{
+
+.projects .card .card-body img:hover {
     transform: scale(1.5);
 }
-.projects .card h5, .projects .card p{
+
+.projects .card h5,
+.projects .card p {
     color: var(--text-color-primary);
 }
 
 /* Projets.css - Ajoutez ces styles */
-.ProjectDetail .card .card-body{
+.ProjectDetail .card .card-body {
     max-height: 500px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .ProjectDetail .card .card-body{
-    max-height: 300px;
+.ProjectDetail .card .card-body img {
+    height: 100%;
 }
+
+/* Responsive */
+@media (max-width: 758px) {
+    .ProjectDetail .card .card-body {
+        max-height: 250px;
+    }
+
+    .ProjectDetail .card .card-body img {
+        height: 100%;
+    }
+
+    .projects .card .card-body {
+        padding: 0;
+        min-height: 250px;
+        
+    }
 }

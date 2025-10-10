@@ -42,10 +42,6 @@ export const ProjectModal = () => {
                 <div className="row justify-content-center my-5">
                     <div className="col-md-10 col-12 p-3">
                         <div className="card bg-dark text-white fade-in-up">
-                            <button onClick={() => navigate(-1)} className="btn btn-outline-primary mb-4">
-                                &larr; Retour aux projets
-                            </button>
-
                             <div className="card-header d-flex justify-content-between align-items-center">
                                 <h1>{project.title}</h1>
                                 <div className="dateTitle py-3">
