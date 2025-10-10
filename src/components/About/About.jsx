@@ -8,8 +8,8 @@ export const About = () => {
         <section className='about' id='about'>
             <div className="hero">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 profilPhoto px-md-5">
+                    <div className="row align-items-center pb-5">
+                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 profilPhoto">
                             <div className="card position-relative fade-in-up" >
                                 <img src={profile.ImageProfile} alt="profile.png" className='img-fluid' loading='lazy' />
                             </div>

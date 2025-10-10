@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <header className="header sticky-top">
       <nav className="navbar navbar-expand-lg d-flex justify-content-between">
-        <div className="container-md container-fluid px-md-0 px-2">
+        <div className="container-md container-fluid px-md-0">
           <a className="navbar-brand col-md-4 col-6" href="#">
             <img src={logo} alt="logo" width={40} />
           </a>
@@ -21,16 +21,16 @@ export const Header = () => {
 
           <div className="collapse navbar-collapse " id="navbarSupportedContent">
             <ul className="navbar-nav justify-content-end text-center ms-auto">
-              <li className={`nav-item me-3 px-2 ${location.pathname === '/' ? 'active' : ''}`}>
+              <li className={`nav-item me-3 ${location.pathname === '/' ? 'active' : ''}`}>
                 <Link className="nav-link" to="/">A Propos</Link>
               </li>
-              <li className={`nav-item me-3 px-2 ${location.pathname === '/skills' ? 'active' : ''}`}>
+              <li className={`nav-item me-3 ${location.pathname === '/skills' ? 'active' : ''}`}>
                 <Link className="nav-link" to="/skills">Compétences</Link>
               </li>
-              <li className={`nav-item me-3 px-2 ${location.pathname === '/projets' ? 'active' : ''}`}>
+              <li className={`nav-item me-3 ${location.pathname === '/projets' ? 'active' : ''}`}>
                 <Link className="nav-link" to="/projets">Projets</Link>
               </li>
-              <li className={`nav-item me-3 px-2 ${location.pathname === '/contact' ? 'active' : ''}`}>
+              <li className={`nav-item me-3 ${location.pathname === '/contact' ? 'active' : ''}`}>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </li>
             </ul>
