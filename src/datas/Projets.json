@@ -2,23 +2,40 @@
   "projects": [
     {
       "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-      "title": "Application E-commerce React",
-      "description": "Plateforme e-commerce complète avec panier, authentification et paiement",
-      "detailedDescription": "Développement d'une application e-commerce moderne avec gestion d'état avancée, système de panier persistant et interface utilisateur responsive.",
-      "image": "",
-      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
+      "title": "Logiciel desktop d'Import-Export",
+      "description": "Logiciel desktop d'expédition de reception de colis et de gestion de stock",
+      "detailedDescription": "Développement d'une application Desktop d'expédition de colis et de gestion de stock.",
+      "image": "/assets/images/projects/galerie-transporteur/trans_3.png",
+      "galerie": [
+        "galerie-transporteur/trans_1.png",
+        "galerie-transporteur/trans_2.png",
+        "galerie-transporteur/trans_5.png",
+        "galerie-transporteur/trans_4.png",
+        "galerie-transporteur/trans_6.png",
+        "galerie-transporteur/trans_7.png",
+        "galerie-transporteur/trans_8.png"
+      ],
+      "technologies": [
+        "JAVA",
+        "SWING",
+        "SQLite",
+        "Maven"
+      ],
       "githubLink": "https://github.com/votre-compte/ecommerce-app",
       "liveLink": "https://votre-app.vercel.app",
       "features": [
-        "Panier d'achat persistant",
+        "Gestion d'employers",
         "Authentification utilisateur",
-        "Paiement sécurisé Stripe",
-        "Interface administrateur",
-        "Recherche et filtres"
+        "Gestion de stock",
+        "Expedition de colis",
+        "Gestion de points de ventes",
+        "Gestion de la clientelle",
+        "Module d'envoi de sms",
+        "Module de mailling"
       ],
-      "category": "Fullstack",
+      "category": "Desktop App",
       "status": "Terminé",
-      "year": 2024
+      "year": 2021
     },
     {
       "id": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
@@ -26,7 +43,13 @@
       "description": "Système de blog avec authentification et commentaires",
       "detailedDescription": "Création d'une plateforme de blogging permettant aux utilisateurs de publier des articles, commenter et interagir.",
       "image": "",
-      "technologies": ["React", "Firebase", "CSS3", "Cloud Functions"],
+      "galerie": [],
+      "technologies": [
+        "React",
+        "Firebase",
+        "CSS3",
+        "Cloud Functions"
+      ],
       "githubLink": "https://github.com/votre-compte/blog-platform",
       "liveLink": "https://votre-blog.firebaseapp.com",
       "features": [
@@ -46,7 +69,13 @@
       "description": "Application météo avec prévisions et géolocalisation",
       "detailedDescription": "Application mobile-first affichant les prévisions météo basées sur la géolocalisation ou la recherche manuelle.",
       "image": "",
-      "technologies": ["React", "API REST", "CSS Grid", "Local Storage"],
+      "galerie": [],
+      "technologies": [
+        "React",
+        "API REST",
+        "CSS Grid",
+        "Local Storage"
+      ],
       "githubLink": "https://github.com/votre-compte/weather-app",
       "liveLink": "https://meteo-app.netlify.app",
       "features": [
