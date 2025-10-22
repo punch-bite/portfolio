@@ -51,12 +51,13 @@ export const ProjectModal = () => {
                             </div>
                             <div className="card-body position-relative p-0" style={{ height: '500px' }}>
                                 <img className="position-absolute"
-                                    src={!project.image}
+                                    src={project.image !== "" ? project.image : `/assets/images/projects/noi_frameware.png`}
                                     alt={project.title} loading="lazy"
-                                    onError={(e) => {
-                                        e.target.src = '/assets/images/projects/noi_frameware.png';
-                                    }}
+                                    // onError={(e) => {
+                                    //     e.target.src = '/assets/images/projects/noi_frameware.png';
+                                    // }}
                                     style={{ width: '100%', height: '100%', objectFit: 'fill' }} />
+                                    <span className="p-3 position-absolute end-0 top-0 translate-middle bg-secondary mt-5 rounded">{`Catégorie : ${project.category}`}</span>
                             </div>
                             <div className="card-footer">
                                 <h3 className="mt-5 mb-2">Description</h3>
@@ -74,7 +75,7 @@ export const ProjectModal = () => {
 
                                 <div className="row">
                                     {project.galerie.map((img, index) => (
-                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4 col-6 mb-2">
+                                        <div key={index} className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4 col-6 mb-2">
                                             <div className="card">
                                                 <img src={`/assets/images/projects/${img}`} alt="" />
                                             </div>
