@@ -39,29 +39,42 @@
     },
     {
       "id": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
-      "title": "Plateforme de Blog Communautaire",
-      "description": "Système de blog avec authentification et commentaires",
-      "detailedDescription": "Création d'une plateforme de blogging permettant aux utilisateurs de publier des articles, commenter et interagir.",
-      "image": "",
-      "galerie": [],
+      "title": "NOI GESTOCK",
+      "description": "Application de gestion de stock moderne",
+      "detailedDescription": "Création d'une application de gestion de stock moderne, avec possibilité de reseautage adapté pour plusieurs business différents: à savoir Dépôts, boutiques, supermarchés, etc...",
+      "image": "/assets/images/projects/galerie-gestock/stock-1.png",
+      "galerie": [
+        "galerie-gestock/stock.png",
+        "galerie-gestock/stock-2.png",
+        "galerie-gestock/stock-3.png",
+        "galerie-gestock/stock-4.png",
+        "galerie-gestock/stock-5.png"
+      ],
       "technologies": [
-        "React",
-        "Firebase",
+        "PHP",
+        "MySQL",
         "CSS3",
-        "Cloud Functions"
+        "JAVASCRIPT",
+        "HTML",
+        "Bootstrap"
       ],
-      "githubLink": "https://github.com/votre-compte/blog-platform",
-      "liveLink": "https://votre-blog.firebaseapp.com",
+      "githubLink": "",
+      "liveLink": "",
       "features": [
-        "Éditeur de texte riche",
-        "Système de commentaires",
-        "Recherche full-text",
-        "Upload d'images",
-        "Notifications en temps réel"
+        "système d'authentification",
+        "Tableau de bord",
+        "Moteur de recherche",
+        "Gestion des produits",
+        "Gestion des commandes",
+        "Gestion des comptes clients",
+        "Gestion des fournisseurs",
+        "Scanner de code bar de produit",
+        "Comptabilité",
+        "Inventaires"
       ],
-      "category": "Frontend",
+      "category": "Full-stack",
       "status": "En développement",
-      "year": 2024
+      "year": 2025
     },
     {
       "id": "c3d4e5f6-g7h8-9012-cdef-345678901234",
